@@ -110,7 +110,6 @@ const initialSlides: SlideContent[] = [
     title: 'Access by Substitute Decision-Makers (SDMs)',
     content: (
       <div className="space-y-6">
-        <div className="flex items-center justify-center mb-4"><UsersIcon className="w-24 h-24 text-purple-400" /></div>
         <p>PHIPA recognizes that not all individuals can exercise their own access rights. A Substitute Decision-Maker (SDM) can make a request on an individual's behalf if they are deemed incapable.</p>
         <p className="font-bold text-xl">Common SDMs include:</p>
         <ul className="list-disc list-inside ml-4 space-y-2 text-lg">
@@ -290,7 +289,7 @@ const phipaOtherSectionSlides: SlideContent[] = [
     title: 'Requests from Insurance Companies',
     content: (
       <div className="space-y-6">
-        <div className="flex items-center justify-center mb-4"><NistIcon className="w-24 h-24 text-purple-400" /></div>
+        <p className="text-2xl font-bold text-center pt-16">Consent is Mandatory</p>
         <p>This is a common scenario, and it is almost always governed by one thing: <span className="text-purple-400 font-bold text-2xl">the individual's consent.</span></p>
         <div className="p-4 bg-gray-800/40 rounded-lg">
           <p>Custodians must obtain a valid, specific, and recent <strong className="text-purple-400">written consent form</strong> signed by the individual before releasing any PHI to an insurance company for claims, underwriting, or other purposes.</p>
@@ -329,7 +328,6 @@ const phipaOtherSectionSlides: SlideContent[] = [
     title: 'Disclosures for Research Purposes',
     content: (
       <div className="space-y-6">
-        <div className="flex items-center justify-center mb-4"><BeakerIcon className="w-24 h-24 text-purple-400" /></div>
         <p>PHI is vital for health research. PHIPA permits disclosure without consent for research, but only under strict conditions to protect privacy.</p>
         <p className="font-bold text-xl">Key Requirements:</p>
         <ul className="list-disc list-inside ml-4 space-y-2 text-lg">
@@ -347,8 +345,7 @@ const phipaOtherSectionSlides: SlideContent[] = [
     title: 'Navigating Discretionary Disclosures',
     content: (
       <div className="flex flex-col items-center justify-center h-full text-center">
-        <LightBulbIcon className="w-32 h-32 text-yellow-400 mb-6" />
-        <p className="text-3xl font-bold mb-4">"May Disclose" vs. "Must Disclose"</p>
+        <p className="text-3xl font-bold mb-4 pt-16">"May Disclose" vs. "Must Disclose"</p>
         <p className="text-xl mb-6">Many exceptions are <span className="text-yellow-400 font-bold">discretionary</span>, placing a heavy burden on the custodian to assess the situation and make a reasonable judgment.</p>
         <p className="text-2xl bg-gray-800/50 p-6 rounded-lg">Key Principle: <span className="text-purple-400 font-bold">Document everything.</span> The reason for disclosure, the specific PHIPA provision relied upon, what was disclosed, and to whom. When in doubt, consult a privacy officer.</p>
       </div>
@@ -397,12 +394,12 @@ const fipaSectionSlides: SlideContent[] = [
     title: 'Agenda: Access Requests under FIPPA',
     content: (
       <div className="h-full flex flex-col justify-center">
-        <ul className="list-none space-y-4 text-2xl">
-            <li className="flex items-start"><ChevronRightIcon className="w-8 h-8 text-purple-400 mr-3 mt-1 flex-shrink-0"/><div>Overview of FIPPA's Dual Mandate</div></li>
-            <li className="flex items-start"><ChevronRightIcon className="w-8 h-8 text-purple-400 mr-3 mt-1 flex-shrink-0"/><div>Types of Requests: Personal vs. General</div></li>
-            <li className="flex items-start"><ChevronRightIcon className="w-8 h-8 text-purple-400 mr-3 mt-1 flex-shrink-0"/><div>The Formal Request Process & Timelines</div></li>
-            <li className="flex items-start"><ChevronRightIcon className="w-8 h-8 text-purple-400 mr-3 mt-1 flex-shrink-0"/><div>Exemptions, Fees, and Appeals</div></li>
-            <li className="flex items-start"><ChevronRightIcon className="w-8 h-8 text-purple-400 mr-3 mt-1 flex-shrink-0"/><div>Real-World Examples of FIPPA Requests</div></li>
+        <ul className="list-disc list-inside ml-4 space-y-4 text-2xl">
+            <li className="animate-slide-in-up" style={{ animationDelay: '100ms' }}>Overview of FIPPA's Dual Mandate</li>
+            <li className="animate-slide-in-up" style={{ animationDelay: '200ms' }}>Types of Requests: Personal vs. General</li>
+            <li className="animate-slide-in-up" style={{ animationDelay: '300ms' }}>The Formal Request Process & Timelines</li>
+            <li className="animate-slide-in-up" style={{ animationDelay: '400ms' }}>Exemptions, Fees, and Appeals</li>
+            <li className="animate-slide-in-up" style={{ animationDelay: '500ms' }}>Real-World Examples of FIPPA Requests</li>
         </ul>
       </div>
     ),
@@ -412,8 +409,7 @@ const fipaSectionSlides: SlideContent[] = [
     title: 'Overview of Right of Access under FIPPA',
     content: (
       <div className="flex flex-col items-center justify-center h-full text-center">
-        <ScaleIcon className="w-32 h-32 text-purple-400 mb-6" />
-        <p className="text-3xl font-bold mb-4">A Dual Mandate: Access & Privacy</p>
+        <p className="text-3xl font-bold mb-4 pt-16">A Dual Mandate: Access & Privacy</p>
         <p className="text-xl mb-6">FIPPA provides a right of access to information under the control of government institutions, while also protecting the privacy of individuals whose personal information is held by these institutions.</p>
         <p className="text-2xl bg-gray-800/50 p-6 rounded-lg">It aims to balance public accountability with the protection of personal privacy.</p>
       </div>
@@ -456,12 +452,10 @@ const fipaSectionSlides: SlideContent[] = [
     content: (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full items-center">
         <div className="p-6 bg-gray-800/50 rounded-lg text-center border border-purple-500">
-          <UserGroupIcon className="w-20 h-20 mx-auto mb-4 text-purple-400" />
           <h3 className="text-2xl font-bold mb-2">Personal Information Request</h3>
           <p>A request by an individual for records containing their own personal information.</p>
         </div>
         <div className="p-6 bg-gray-800/50 rounded-lg text-center border border-indigo-500">
-          <ArchiveBoxIcon className="w-20 h-20 mx-auto mb-4 text-indigo-400" />
           <h3 className="text-2xl font-bold mb-2">General Records Request</h3>
           <p>A request for any other type of record held by a government institution (e.g., reports, correspondence, financial data).</p>
         </div>
@@ -474,26 +468,21 @@ const fipaSectionSlides: SlideContent[] = [
     content: (
       <div className="space-y-6">
         <p>A formal FIPPA request must be made to the institution that holds the records.</p>
-        <ul className="list-none space-y-4 text-xl">
-          <li className="flex items-start"><ChevronRightIcon className="w-8 h-8 text-purple-400 mr-3 mt-1 flex-shrink-0"/><div><strong>Written Request:</strong> Must be in writing (letter or designated form).</div></li>
-          <li className="flex items-start"><ChevronRightIcon className="w-8 h-8 text-purple-400 mr-3 mt-1 flex-shrink-0"/><div><strong>Sufficient Detail:</strong> Must provide enough detail for an experienced employee to identify the record.</div></li>
-          <li className="flex items-start"><ChevronRightIcon className="w-8 h-8 text-purple-400 mr-3 mt-1 flex-shrink-0"/>
-            <div className="flex items-center">
-              <strong>Application Fee:</strong> A mandatory $5.00 fee must accompany most general records requests.
-            </div>
-          </li>
+        <ul className="list-disc list-inside ml-4 space-y-4 text-xl">
+          <li><strong>Written Request:</strong> Must be in writing (letter or designated form).</li>
+          <li><strong>Sufficient Detail:</strong> Must provide enough detail for an experienced employee to identify the record.</li>
+          <li><strong>Application Fee:</strong> A mandatory $5.00 fee must accompany most general records requests.</li>
         </ul>
         <p className="text-lg bg-gray-800/50 p-4 rounded-lg">Note: The $5 application fee is typically waived for personal information requests.</p>
       </div>
     ),
   },
-  // SLIDE 30: Response Timelines
+  // SLIDE 30: FIPPA Response Timelines
   {
     title: 'FIPPA Response Timelines',
     content: (
       <div className="flex flex-col items-center justify-center h-full text-center">
-        <ClockIcon className="w-32 h-32 text-purple-400 mb-6" />
-        <p className="text-5xl font-bold mb-4">30 Calendar Days</p>
+        <p className="text-5xl font-bold mb-4 pt-16">30 Calendar Days</p>
         <p className="text-xl mb-6">Similar to PHIPA, an institution must respond to a request <span className="text-purple-400 font-bold">within 30 days</span> of receiving the request and the application fee (if applicable).</p>
         <p className="text-lg bg-gray-800/50 p-4 rounded-lg">Time extensions are possible for large or complex requests, but the requester must be notified.</p>
       </div>
@@ -541,14 +530,14 @@ const fipaSectionSlides: SlideContent[] = [
     content: (
       <div className="space-y-4">
         <p>FIPPA requests can cover a vast range of government activities:</p>
-        <div className="p-3 bg-gray-800/40 rounded-lg flex items-start"><UserGroupIcon className="w-8 h-8 text-purple-400 mr-4 flex-shrink-0 mt-1"/><div><strong>Personal:</strong> "A copy of all records related to my application for social assistance."</div></div>
-        <div className="p-3 bg-gray-800/40 rounded-lg flex items-start"><ArchiveBoxIcon className="w-8 h-8 text-indigo-400 mr-4 flex-shrink-0 mt-1"/><div><strong>General (Accountability):</strong> "All expense reports submitted by the Deputy Minister of Transportation for the last fiscal year."</div></div>
-        <div className="p-3 bg-gray-800/40 rounded-lg flex items-start"><ArchiveBoxIcon className="w-8 h-8 text-indigo-400 mr-4 flex-shrink-0 mt-1"/><div><strong>General (Public Interest):</strong> "The final report and recommendations from the task force on long-term care home standards."</div></div>
-        <div className="p-3 bg-gray-800/40 rounded-lg flex items-start"><ArchiveBoxIcon className="w-8 h-8 text-indigo-400 mr-4 flex-shrink-0 mt-1"/><div><strong>General (Policy):</strong> "Any briefing notes or memos provided to the Minister of Education regarding the new science curriculum."</div></div>
+        <div className="p-3 bg-gray-800/40 rounded-lg"><div><strong>Personal:</strong> "A copy of all records related to my application for social assistance."</div></div>
+        <div className="p-3 bg-gray-800/40 rounded-lg"><div><strong>General (Accountability):</strong> "All expense reports submitted by the Deputy Minister of Transportation for the last fiscal year."</div></div>
+        <div className="p-3 bg-gray-800/40 rounded-lg"><div><strong>General (Public Interest):</strong> "The final report and recommendations from the task force on long-term care home standards."</div></div>
+        <div className="p-3 bg-gray-800/40 rounded-lg"><div><strong>General (Policy):</strong> "Any briefing notes or memos provided to the Minister of Education regarding the new science curriculum."</div></div>
       </div>
     ),
   },
-  // SLIDE 34: Denial Process
+  // SLIDE 34: Denial of Access and Appeals
   {
     title: 'Denial of Access and Appeals',
     content: (
@@ -573,11 +562,11 @@ const fipaSectionSlides: SlideContent[] = [
     content: (
       <div className="space-y-6">
         <ul className="list-none space-y-4 text-xl">
-          <li className="flex items-start"><CheckCircleIcon className="w-8 h-8 text-green-400 mr-3 mt-1 flex-shrink-0"/><div><strong>Transparency & Accountability:</strong> FIPPA is a key tool for ensuring government transparency.</div></li>
-          <li className="flex items-start"><CheckCircleIcon className="w-8 h-8 text-green-400 mr-3 mt-1 flex-shrink-0"/><div><strong>Two Streams:</strong> Clearly distinguish between personal and general records requests, as rules for fees and exemptions differ.</div></li>
-          <li className="flex items-start"><CheckCircleIcon className="w-8 h-8 text-green-400 mr-3 mt-1 flex-shrink-0"/><div><strong>Process is Formal:</strong> A written request and a $5 fee (for general) starts the 30-day clock.</div></li>
-          <li className="flex items-start"><CheckCircleIcon className="w-8 h-8 text-green-400 mr-3 mt-1 flex-shrink-0"/><div><strong>Exemptions are the Guardrails:</strong> Access is broad but subject to specific, legally defined exemptions.</div></li>
-           <li className="flex items-start"><CheckCircleIcon className="w-8 h-8 text-green-400 mr-3 mt-1 flex-shrink-0"/><div><strong>Appeal to the IPC:</strong> The IPC provides independent oversight and adjudication of access disputes.</div></li>
+          <li className="flex items-start"><div><strong>Transparency & Accountability:</strong> FIPPA is a key tool for ensuring government transparency.</div></li>
+          <li className="flex items-start"><div><strong>Two Streams:</strong> Clearly distinguish between personal and general records requests, as rules for fees and exemptions differ.</div></li>
+          <li className="flex items-start"><div><strong>Process is Formal:</strong> A written request and a $5 fee (for general) starts the 30-day clock.</div></li>
+          <li className="flex items-start"><div><strong>Exemptions are the Guardrails:</strong> Access is broad but subject to specific, legally defined exemptions.</div></li>
+           <li className="flex items-start"><div><strong>Appeal to the IPC:</strong> The IPC provides independent oversight and adjudication of access disputes.</div></li>
         </ul>
       </div>
     ),
@@ -723,8 +712,7 @@ const phipaCorrectionSectionSlides: SlideContent[] = [
     title: 'The Statement of Disagreement',
     content: (
       <div className="flex flex-col items-center justify-center h-full text-center">
-        <ChatBubbleBottomCenterTextIcon className="w-32 h-32 text-purple-400 mb-6" />
-        <p className="text-3xl font-bold mb-4">Making Your Position Part of the Record</p>
+        <p className="text-3xl font-bold mb-4 pt-16">Making Your Position Part of the Record</p>
         <p className="text-xl mb-6">This is a written statement from the individual explaining the correction that was requested and why they disagree with the custodian's refusal.</p>
         <p className="text-2xl bg-gray-800/50 p-6 rounded-lg">The custodian is legally required to attach this statement to the disputed information, making it a permanent part of the official health record.</p>
       </div>
@@ -748,11 +736,11 @@ const phipaCorrectionSectionSlides: SlideContent[] = [
     content: (
       <div className="space-y-6">
         <ul className="list-none space-y-4 text-xl">
-          <li className="flex items-start"><CheckCircleIcon className="w-8 h-8 text-green-400 mr-3 mt-1 flex-shrink-0"/><div><strong>Accuracy is a Right:</strong> Individuals have a right to accurate and complete PHI.</div></li>
-          <li className="flex items-start"><CheckCircleIcon className="w-8 h-8 text-green-400 mr-3 mt-1 flex-shrink-0"/><div><strong>Factual vs. Opinion:</strong> The process is for correcting facts, not challenging professional judgments.</div></li>
-          <li className="flex items-start"><CheckCircleIcon className="w-8 h-8 text-green-400 mr-3 mt-1 flex-shrink-0"/><div><strong>Formal, Written Process:</strong> All requests and responses must be in writing.</div></li>
-          <li className="flex items-start"><CheckCircleIcon className="w-8 h-8 text-green-400 mr-3 mt-1 flex-shrink-0"/><div><strong>Statement of Disagreement is Key:</strong> It ensures the patient's perspective is permanently part of their record, even if a correction is denied.</div></li>
-           <li className="flex items-start"><CheckCircleIcon className="w-8 h-8 text-green-400 mr-3 mt-1 flex-shrink-0"/><div><strong>Notification is Mandatory:</strong> Changes must be communicated to others to prevent ongoing errors in care.</div></li>
+          <li className="flex items-start"><div><strong>Accuracy is a Right:</strong> Individuals have a right to accurate and complete PHI.</div></li>
+          <li className="flex items-start"><div><strong>Factual vs. Opinion:</strong> The process is for correcting facts, not challenging professional judgments.</div></li>
+          <li className="flex items-start"><div><strong>Formal, Written Process:</strong> All requests and responses must be in writing.</div></li>
+          <li className="flex items-start"><div><strong>Statement of Disagreement is Key:</strong> It ensures the patient's perspective is permanently part of their record, even if a correction is denied.</div></li>
+           <li className="flex items-start"><div><strong>Notification is Mandatory:</strong> Changes must be communicated to others to prevent ongoing errors in care.</div></li>
         </ul>
       </div>
     ),
@@ -881,9 +869,9 @@ const phipaConsentSectionSlides: SlideContent[] = [
     content: (
       <div className="space-y-4">
         <p>A patient's right to a lockbox must be an <span className="text-purple-400">informed</span> right. The custodian's role is to counsel the patient, not just process the request.</p>
-        <div className="p-3 bg-gray-800/40 rounded-lg flex items-start"><ChatBubbleBottomCenterTextIcon className="w-10 h-10 text-purple-400 mr-4 flex-shrink-0 mt-1"/><div><strong>Explain Potential for Harm:</strong> Neutrally explain that withholding information could lead to adverse events (e.g., drug interactions, misdiagnosis).</div></div>
-        <div className="p-3 bg-gray-800/40 rounded-lg flex items-start"><ChatBubbleBottomCenterTextIcon className="w-10 h-10 text-purple-400 mr-4 flex-shrink-0 mt-1"/><div><strong>Explain the "Break Glass" Exception:</strong> Ensure the patient understands it's not a perfect shield in emergencies.</div></div>
-        <div className="p-3 bg-gray-800/40 rounded-lg flex items-start"><ChatBubbleBottomCenterTextIcon className="w-10 h-10 text-purple-400 mr-4 flex-shrink-0 mt-1"/><div><strong>Document the Discussion:</strong> The conversation itself should be documented, noting that the risks were explained and understood by the patient.</div></div>
+        <div className="p-3 bg-gray-800/40 rounded-lg"><div><strong>Explain Potential for Harm:</strong> Neutrally explain that withholding information could lead to adverse events (e.g., drug interactions, misdiagnosis).</div></div>
+        <div className="p-3 bg-gray-800/40 rounded-lg"><div><strong>Explain the "Break Glass" Exception:</strong> Ensure the patient understands it's not a perfect shield in emergencies.</div></div>
+        <div className="p-3 bg-gray-800/40 rounded-lg"><div><strong>Document the Discussion:</strong> The conversation itself should be documented, noting that the risks were explained and understood by the patient.</div></div>
         <div className="p-4 bg-gray-800/50 rounded-lg mt-4 text-center font-bold text-xl">The goal is shared decision-making, not just ticking a box.</div>
       </div>
     ),
@@ -910,8 +898,7 @@ const phipaCaseStudiesSectionSlides: SlideContent[] = [
     title: 'Part 6: PHIPA in Practice: Case Studies & Professional Impact',
     content: (
       <div className="flex flex-col items-center justify-center h-full text-center">
-        <GavelIcon className="w-32 h-32 text-purple-400 mb-6" />
-        <p className="text-4xl font-bold mb-4">Applying the Principles to Real-World Scenarios</p>
+        <p className="text-4xl font-bold mb-4 pt-16">Applying the Principles to Real-World Scenarios</p>
         <p className="text-xl text-gray-300">This section explores common challenges and complaints, highlighting the critical role of Health Informatics and Information Management (HIM) professionals.</p>
       </div>
     ),
@@ -922,12 +909,12 @@ const phipaCaseStudiesSectionSlides: SlideContent[] = [
     content: (
       <div className="h-full flex flex-col justify-center">
         <ul className="list-none space-y-4 text-2xl">
-          <li className="flex items-start"><ChevronRightIcon className="w-8 h-8 text-purple-400 mr-3 mt-1 flex-shrink-0"/><div>Common IPC Complaints: An Overview</div></li>
-          <li className="flex items-start"><ChevronRightIcon className="w-8 h-8 text-purple-400 mr-3 mt-1 flex-shrink-0"/><div>Case Study: The Correction Complaint</div></li>
-          <li className="flex items-start"><ChevronRightIcon className="w-8 h-8 text-purple-400 mr-3 mt-1 flex-shrink-0"/><div>Case Study: The Complex Access Request</div></li>
-          <li className="flex items-start"><ChevronRightIcon className="w-8 h-8 text-purple-400 mr-3 mt-1 flex-shrink-0"/><div>Case Study: Lawful but Challenged Disclosures</div></li>
-          <li className="flex items-start"><ChevronRightIcon className="w-8 h-8 text-purple-400 mr-3 mt-1 flex-shrink-0"/><div>Case Study: Unauthorized Access ("Snooping")</div></li>
-          <li className="flex items-start"><ChevronRightIcon className="w-8 h-8 text-purple-400 mr-3 mt-1 flex-shrink-0"/><div>Impact and Key Skills for HIM Professionals</div></li>
+          <li>Common IPC Complaints: An Overview</li>
+          <li>Case Study: The Correction Complaint</li>
+          <li>Case Study: The Complex Access Request</li>
+          <li>Case Study: Lawful but Challenged Disclosures</li>
+          <li>Case Study: Unauthorized Access ("Snooping")</li>
+          <li>Impact and Key Skills for HIM Professionals</li>
         </ul>
       </div>
     ),
