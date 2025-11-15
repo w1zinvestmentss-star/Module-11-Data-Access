@@ -13,7 +13,7 @@ import {
 const initialSlides: SlideContent[] = [
   // SLIDE 1: Title
   {
-    title: 'Module 11 - HINF5502 - Data Access Governance & Management',
+    title: 'HINF5502 - Module 11 - Data Access, Governance & Management',
     content: (
       <div className="flex flex-col items-center justify-center h-full text-center animate-fade-in">
         <KeyIcon className="w-32 h-32 text-purple-400" />
